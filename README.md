@@ -106,7 +106,3 @@ java Loginb
 
 ---
 
-## 👨‍💻 Author
-
-**Shubh Kapadia**  
-Final Year CSE Student
