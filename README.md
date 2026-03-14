@@ -1,98 +1,112 @@
-Address Book Management System (Java)
+# Address Book Management System (Java)
 
-A simple Java Swing based Address Book Application that allows users to login and manage contacts.
-Users can add, search, and delete contact records stored in a database using JDBC connectivity.
+A simple **Java Swing based Address Book Management System** that allows users to manage contact records.  
+The application provides features to **login, add, search, and delete contacts** using a graphical interface.
 
-Features
+---
 
-User Login Authentication
+## 🚀 Features
 
-Add new contact records
+- User Login Authentication
+- Add new contact records
+- Search contacts by **Name or Phone Number**
+- Delete contact records
+- Simple **GUI built using Java AWT/Swing**
+- Database connectivity using **JDBC**
 
-Search contacts by Name or Phone Number
+---
 
-Delete existing records
+## 🛠️ Technologies Used
 
-Simple GUI built using Java AWT/Swing
+- Java
+- Java AWT / Swing
+- JDBC
+- ODBC Data Source
+- SQL
 
-Database connectivity using JDBC-ODBC
+---
 
-Project Structure
-AddressBook/
+## 📂 Project Structure
+
+```
+AddressBook
 │
-├── Loginb.java      # Login screen
-├── Start.java       # Main menu after login
-├── Add.java         # Add new contact
-├── Search.java      # Search contact
-├── DeleRec.java     # Delete contact
+├── Loginb.java     # Login page
+├── Start.java      # Main menu
+├── Add.java        # Add contact record
+├── Search.java     # Search contact
+├── DeleRec.java    # Delete contact
+```
 
-Example login interface is implemented in
+---
 
+## 🗄️ Database Tables
 
-Search functionality is implemented in
+### login
 
+| Field | Type |
+|------|------|
+| username | varchar |
+| password | varchar |
 
-Delete functionality is implemented in
+### addressb
 
+| Field | Type |
+|------|------|
+| Name | varchar |
+| Phone | number |
+| Address | varchar |
+| Email | varchar |
+| Birthdate | date |
+| City | varchar |
 
-Add record functionality is implemented in
+---
 
+## ⚙️ Setup Instructions
 
-Main menu navigation is implemented in
+### 1. Install Java
+Install **JDK 8 or later**
 
+### 2. Configure ODBC Data Source
 
-Technologies Used
+1. Open **Control Panel**
+2. Go to **Administrative Tools**
+3. Open **ODBC Data Sources**
+4. Create a DSN named:
 
-Java
+```
+student
+```
 
-Java Swing / AWT
+### 3. Create Database Tables
 
-JDBC
+Create the required tables **login** and **addressb** in your database.
 
-ODBC Database Connection
+### 4. Compile the Project
 
-SQL
-
-Database Structure
-Table: login
-Field	Type
-username	varchar
-password	varchar
-Table: addressb
-Field	Type
-Name	varchar
-Phone	number
-Address	varchar
-Email	varchar
-Birthdate	date
-City	varchar
-How to Run
-
-Install Java JDK
-
-Configure ODBC Data Source
-
-Create DSN named student
-
-Create required database tables.
-
-Compile the project
-
+```
 javac *.java
+```
 
-Run the login class
+### 5. Run the Program
 
+```
 java Loginb
-Screens
+```
 
-Application includes:
+---
 
-Login Screen
+## 📸 Application Modules
 
-Main Menu
+- Login Screen
+- Main Menu
+- Add Contact
+- Search Contact
+- Delete Contact
 
-Add Contact Form
+---
 
-Search Contact
+## 👨‍💻 Author
 
-Delete Contact
+**Shubh Kapadia**  
+Final Year CSE Student
